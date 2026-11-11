@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light" data-palette="default" data-font="normal">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jogos de Português e Matemática com preferências de acessibilidade ajustáveis.">
+  <meta name="theme-color" content="#f5f7ff">
+  <title>Além de um Clique</title>
+  <link rel="icon" href="./assets/dino.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/visual-inclusivo.css">
+  <script type="module" src="./js/main.mjs?v=modular-20261110"></script>
+  <!-- MediaPipe Tasks Vision é carregado sob demanda pelo módulo de gestos. -->
+</head>
+<body>
+  <div class="schoolyard" aria-hidden="true"><div class="schoolyard-clouds"></div></div>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <header class="top">
+    <div class="shell bar">
+      <button class="brand" id="home" type="button"><span aria-hidden="true">🌈</span> Além de um Clique</button>
+      <button class="secondary" id="settings" type="button"><span aria-hidden="true">⚙️</span> Ajustes</button>
+    </div>
+  </header>
+  <main class="shell" id="main" tabindex="-1"></main>
+  <footer class="shell footer"><span>Além de um Clique</span><span>Aprender é para todo mundo 💜</span></footer>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="announcement" class="sr-only" role="status"></div>
+  <noscript>Ative o JavaScript para jogar e ajustar as preferências.</noscript>
+
+  <!-- Área de Captura de Gestos -->
+  <div id="gesture-container" style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); text-align: center;">
+    <div style="position:relative;width:180px;height:135px;margin:auto;overflow:hidden;border-radius:8px;background:#000"><video id="gesture-video" width="180" height="135" autoplay muted playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scaleX(-1)"></video><canvas id="gesture-overlay" width="180" height="135" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scaleX(-1);pointer-events:none"></canvas></div>
+    <small id="gesture-status" style="font-size: 12px; font-weight: bold; margin-top: 4px; display: block;">Aguardando gesto...</small>
+  </div>
+
+</body>
+</html>

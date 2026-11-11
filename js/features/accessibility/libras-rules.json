@@ -1,0 +1,317 @@
+{
+  "version": "0.3-alfabeto-experimental",
+  "description": "26 letras cadastradas: 24 regras estáticas aproximadas e J/Z por trajetória. NÃO validado para ensino ou avaliação de Libras; porcentagem é similaridade, não probabilidade.",
+  "threshold": 0.88,
+  "minimumMargin": 0.1,
+  "letters": [
+    {
+      "letter": "A",
+      "fingers": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "letter": "B",
+      "fingers": [
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      "minSpread": 1.15
+    },
+    {
+      "letter": "D",
+      "fingers": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "letter": "I",
+      "fingers": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "letter": "L",
+      "fingers": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "minThumbIndex": 0.7
+    },
+    {
+      "letter": "V",
+      "fingers": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "minIndexMiddle": 0.42
+    },
+    {
+      "letter": "Y",
+      "fingers": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "letter": "C",
+      "fingers": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "maxSpread": 2.1,
+      "minCurl": 0.12,
+      "maxCurl": 0.72,
+      "minThumbIndex": 0.25
+    },
+    {
+      "letter": "O",
+      "fingers": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxThumbIndex": 0.55,
+      "maxTipCluster": 0.8
+    },
+    {
+      "letter": "E",
+      "fingers": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxThumbIndex": 0.85,
+      "minTipCluster": 0.65
+    },
+    {
+      "letter": "F",
+      "fingers": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "maxThumbIndex": 0.72
+    },
+    {
+      "letter": "S",
+      "fingers": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minThumbIndex": 0.9,
+      "minTipCluster": 0.7
+    },
+    {
+      "letter": "U",
+      "fingers": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "maxIndexMiddle": 0.42
+    },
+    {
+      "letter": "W",
+      "fingers": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "minSpread": 0.85
+    },
+    {
+      "letter": "R",
+      "fingers": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "maxIndexMiddle": 0.65,
+      "crossed": true
+    },
+    {
+      "letter": "G",
+      "fingers": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "minIndexMiddle": 0.65,
+      "minThumbIndex": 0.38,
+      "experimental": true
+    },
+    {
+      "letter": "H",
+      "fingers": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "maxIndexMiddle": 0.58,
+      "minThumbIndex": 0.65,
+      "experimental": true
+    },
+    {
+      "letter": "K",
+      "fingers": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "minIndexMiddle": 0.38,
+      "minThumbIndex": 0.48,
+      "experimental": true
+    },
+    {
+      "letter": "M",
+      "fingers": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minThumbIndex": 0.55,
+      "maxTipCluster": 1.15,
+      "experimental": true
+    },
+    {
+      "letter": "N",
+      "fingers": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minThumbIndex": 0.45,
+      "maxTipCluster": 1.0,
+      "experimental": true
+    },
+    {
+      "letter": "P",
+      "fingers": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "maxIndexMiddle": 1.05,
+      "minThumbIndex": 0.4,
+      "experimental": true
+    },
+    {
+      "letter": "Q",
+      "fingers": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "maxThumbIndex": 1.1,
+      "minIndexMiddle": 0.35,
+      "experimental": true
+    },
+    {
+      "letter": "T",
+      "fingers": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "maxThumbIndex": 0.8,
+      "maxTipCluster": 1.2,
+      "experimental": true
+    },
+    {
+      "letter": "X",
+      "fingers": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minThumbIndex": 0.8,
+      "minCurl": 0.1,
+      "experimental": true
+    }
+  ],
+  "dynamicLetters": [
+    {
+      "letter": "J",
+      "baseFingers": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "description": "Movimento descendente e curva do mindinho (aproximação)"
+    },
+    {
+      "letter": "Z",
+      "baseFingers": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "description": "Traçado em zigue-zague do indicador (aproximação)"
+    }
+  ]
+}
